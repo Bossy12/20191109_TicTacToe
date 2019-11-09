@@ -39,11 +39,34 @@ public class TicTacToe {
         }
     }
 
+    public int readMove() {
+        //temp
+        return -1;
+    }
+
+
+    public void makeMove(Player player, int position) {
+
+    }
+
     public void playGame() {
         //initBoard
         initBoard();
         showBoard();
 
+        Player currentPlayer = player1;
 
+        //while not win
+        //read move
+        readMove();
+        //make move
+        //show board(afisezi metoda showBoard();)
+        //test win
+        //change player ?
+        if (currentPlayer == player1) {
+            currentPlayer = player2;
+        } else {
+            currentPlayer = player1;
+        }
     }
 }
